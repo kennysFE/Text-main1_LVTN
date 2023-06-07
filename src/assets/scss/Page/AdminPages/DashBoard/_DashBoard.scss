@@ -1,0 +1,42 @@
+.admin {
+    height: 100vh;
+    .admin_slidebar {
+        background-color: #f8f8fb;
+    }
+    .tab-admin {
+        color: #bdbdc7;
+        padding: 13px 20px;
+        cursor: pointer;
+        transition: all linear 0.4s;
+        &:hover {
+            background-color: #355c7d;
+        }
+    }
+    .ant-menu-root {
+        .ant-menu-submenu {
+            color: #747171 !important;
+            .ant-menu-sub {
+                // background-color: #343957 !important;
+            }
+        }
+        .ant-menu-submenu-title {
+            &:hover {
+                font-weight: 500;
+                color: #eb5757 !important;
+            }
+        }
+        .ant-menu-submenu-selected {
+            font-weight: 500;
+            color: #eb5757 !important;
+        }
+
+        background-color: #f8f8fb !important;
+        font-size: 18px;
+
+        .ant-menu-submenu-arrow {
+            &:hover {
+                color: #eb5757 !important;
+            }
+        }
+    }
+}

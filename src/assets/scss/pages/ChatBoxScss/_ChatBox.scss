@@ -1,0 +1,31 @@
+
+.ant-layout-sider {
+  max-width: 200px !important;
+  min-width: 0px !important;
+  width: 100px !important;
+  background-color: whitesmoke;
+  padding: 10px 10px;
+}
+.heightBoxChat{
+  width:400px ;
+  margin:0 auto ;
+  position:fixed;
+  z-index: 50;
+  right:10px;
+  bottom: 10px;
+}
+
+.ant-layout-footer {
+  padding:5px 20px;
+}
+
+.ant-layout.ant-layout-has-sider {
+  height: 80vh;
+}
+
+.ant-input-search > .ant-input-group > .ant-input-group-addon:last-child .ant-input-search-button {
+  background-color: rgb(54, 54, 237);
+  &:hover{
+    background-color:rgb(122, 122, 237);
+  }
+}

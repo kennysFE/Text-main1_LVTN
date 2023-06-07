@@ -1,0 +1,19 @@
+.carousel-icon {
+    display: flex !important;
+    justify-content: space-between !important;
+}
+.carousel-icon-dad {
+    .slick-dots {
+        display: none !important;
+    }
+    .slick-arrow.slick-prev {
+        &::before {
+            color: #c74c4c !important;
+        }
+    }
+    .slick-arrow.slick-next {
+        &::before {
+            color: #c74c4c !important;
+        }
+    }
+}

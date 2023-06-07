@@ -1,0 +1,26 @@
+.header{
+    border-bottom: 1px solid #ccc;
+    .searchBox{
+        border : 1px solid #ccc;
+        box-shadow: 0 2px 3px 3px rgba(0, 0, 0, 0.04);
+        transition: all linear 0.3s;
+        // width: 90%;
+        &:hover{
+            box-shadow: 0 2px 3px 3px rgba(0, 0, 0, 0.06);
+        }
+    }
+    .host{
+        >a,>span{
+            padding:12px;
+            background-color: transparent;
+            border-radius: 9999px;
+            transition: all linear 0.3s;
+            cursor: pointer;
+            &:hover{
+            background-color: rgb(247,247,247);
+            }
+           
+        }
+
+    }
+}

@@ -1,0 +1,17 @@
+.Header_Card {
+    width: 100%;
+    @media screen and (min-width: 600px) {
+     width : 48%
+    };
+    @media screen and (min-width:950px){
+     width: 32%
+    };
+           @media screen and (min-width:1300px) {
+               width: 23%
+           }
+     
+           ;
+   .image{
+     height: 300px
+   }
+ }
