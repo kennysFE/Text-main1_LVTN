@@ -63,17 +63,11 @@ function LoginNew({}: Props) {
         onClick={() => {
           navigate("/");
         }}
-        className="text-lg cursor-pointer transition-all hover:-translate-y-2 text-white font-medium rounded-full bg-primary"
+        className="text-lg cursor-pointer transition-all hover:-translate-y-2 text-red-400 font-medium rounded-full bg-primary"
       >
         Trang chủ
       </div>
       <div className="flex flex-col md:flex-row h-screen items-center">
-        <div className="bg-indigo-600 hidden lg:block w-full md:w-1/2 xl:w-2/3 h-screen">
-          <img
-            src="https://images.unsplash.com/photo-1535827841776-24afc1e255ac?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fGhvdGVsJTIwYm9va2luZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=1000&q=60"
-            className="w-full h-full object-cover"
-          />
-        </div>
         <div className="bg-white w-full md:max-w-md lg:max-w-full md:mx-auto md:w-1/2 xl:w-1/3 h-screen px-6 lg:px-16 xl:px-12 flex items-center justify-center">
           <div className="w-full h-100">
             <h1 className="text-xl md:text-2xl font-bold leading-tight mt-12">
@@ -137,6 +131,12 @@ function LoginNew({}: Props) {
               </a>
             </p>
           </div>
+        </div>
+        <div className="bg-indigo-600 hidden lg:block w-full md:w-1/2 xl:w-2/3 h-screen">
+          <img
+            src="https://images.unsplash.com/photo-1598605272254-16f0c0ecdfa5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjV8fGhvdGVsfGVufDB8fDB8fHww&auto=format&fit=crop&w=1000&q=60"
+            className="w-full h-full object-cover"
+          />
         </div>
       </div>
     </form>
