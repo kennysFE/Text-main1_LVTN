@@ -19,7 +19,7 @@ import { FcGoogle } from "react-icons/fc";
 
 type Props = {};
 
-function LoginNew({}: Props) {
+function RegisterNew({}: Props) {
   const dispatch: AppDispatch = useDispatch();
   const navigate = useNavigate();
   const { number } = useParams();
@@ -67,8 +67,8 @@ function LoginNew({}: Props) {
       >
         Trang chủ
       </div>
-      <div className="flex flex-col md:flex-row h-screen items-center">
-        <div className="bg-white w-full md:max-w-md lg:max-w-full md:mx-auto md:w-1/2 xl:w-1/3 h-screen px-6 lg:px-16 xl:px-12 flex items-center justify-center">
+      <div className="flex flex-col md:flex-row h-screen items-center overflow-y-auto w-full">
+        <div className="bg-white w-2/5 h-screen px-6 lg:px-16 xl:px-12 flex items-center justify-center">
           <div className="w-full h-29rem">
             <h1 className="text-xl md:text-2xl font-bold leading-tight mt-12">
               Log in to your account
@@ -82,6 +82,54 @@ function LoginNew({}: Props) {
                   id=""
                   placeholder="Enter Email Address"
                   className="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500 focus:bg-white focus:outline-none"
+                />
+              </div>
+              <div className="mt-4">
+                <label className="block text-gray-700">Password </label>
+                <input
+                  type="password"
+                  name=""
+                  id=""
+                  placeholder="Enter Password"
+                  minLength={6}
+                  className="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500 focus:bg-white focus:outline-none"
+                  required
+                />
+              </div>
+              <div className="mt-4">
+                <label className="block text-gray-700">Password </label>
+                <input
+                  type="password"
+                  name=""
+                  id=""
+                  placeholder="Enter Password"
+                  minLength={6}
+                  className="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500 focus:bg-white focus:outline-none"
+                  required
+                />
+              </div>
+              <div className="mt-4">
+                <label className="block text-gray-700">Password </label>
+                <input
+                  type="password"
+                  name=""
+                  id=""
+                  placeholder="Enter Password"
+                  minLength={6}
+                  className="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500 focus:bg-white focus:outline-none"
+                  required
+                />
+              </div>
+              <div className="mt-4">
+                <label className="block text-gray-700">Password </label>
+                <input
+                  type="password"
+                  name=""
+                  id=""
+                  placeholder="Enter Password"
+                  minLength={6}
+                  className="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500 focus:bg-white focus:outline-none"
+                  required
                 />
               </div>
               <div className="mt-4">
@@ -132,7 +180,7 @@ function LoginNew({}: Props) {
             </p>
           </div>
         </div>
-        <div className="bg-indigo-600 hidden lg:block w-full md:w-1/2 xl:w-2/3 h-screen">
+        <div className="bg-indigo-600 hidden lg:block w-3/5 h-screen fixed top-0 right-0 mr-4">
           <img
             src="https://images.unsplash.com/photo-1598605272254-16f0c0ecdfa5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjV8fGhvdGVsfGVufDB8fDB8fHww&auto=format&fit=crop&w=1000&q=60"
             className="w-full h-full object-cover"
@@ -143,4 +191,4 @@ function LoginNew({}: Props) {
   );
 }
 
-export default memo(LoginNew);
+export default memo(RegisterNew);

@@ -69,6 +69,7 @@ const DetailLocation = lazy(() => import("./pages/DetailLocation/DetailLocation"
 const Chat = lazy(() => import("./pages/ChatBox/Chat"));
 const DashBoardInfor = lazy(() => import("./pages/AdminPages/Dashboard/DashBoardInfor"));
 const Login2 = lazy(() => import("./pages/Login/LoginNew"));
+const Register2 = lazy(() => import("./pages/Register/Register2"));
 
 
 type Props = {};
@@ -96,6 +97,7 @@ export default function App({}: Props) {
         {/* <RouterProvider router={router} /> */}
         <Routes>
           <Route path="/Login2" element={<Login2 />}/>
+          <Route path="/Register2" element={<Register2 />}/>
           <Route path="/" element={<HomeTemplate />}>
 
           {/* loading */}
