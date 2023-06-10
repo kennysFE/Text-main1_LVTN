@@ -53,7 +53,7 @@ function RegisterNew({}: Props) {
 
   return (
     <form onSubmit={onSubmit}>
-      <div
+      {/* <div
         style={{
           position: "absolute",
           top: "20px",
@@ -66,8 +66,8 @@ function RegisterNew({}: Props) {
         className="text-lg cursor-pointer transition-all hover:-translate-y-2 text-red-400 font-medium rounded-full bg-primary"
       >
         Trang chủ
-      </div>
-      <div className="flex flex-col md:flex-row h-screen items-center overflow-y-auto w-full">
+      </div> */}
+      <div className="flex flex-wrap h-screen items-center w-full">
         <div className="bg-white w-2/5 h-screen px-6 lg:px-16 xl:px-12 flex items-center justify-center">
           <div className="w-full h-29rem">
             <h1 className="text-xl md:text-2xl font-bold leading-tight mt-12">
@@ -180,10 +180,10 @@ function RegisterNew({}: Props) {
             </p>
           </div>
         </div>
-        <div className="bg-indigo-600 hidden lg:block w-3/5 h-screen fixed top-0 right-0 mr-4">
+        <div className="bg-indigo-600 hidden lg:block w-3/5 h-screen fixed top-0 right-0">
           <img
             src="https://images.unsplash.com/photo-1598605272254-16f0c0ecdfa5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjV8fGhvdGVsfGVufDB8fDB8fHww&auto=format&fit=crop&w=1000&q=60"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover absolute top-0 right-0"
           />
         </div>
       </div>
